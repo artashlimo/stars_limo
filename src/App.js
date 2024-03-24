@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home";
+import Cars from "./components/Cars";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
+import { useEffect, useRef } from "react";
 
+import "./App.css";
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const executeScroll = (ref) => ref.current.scrollIntoView();
+  const refList = [useRef('cars'), useRef('aboutUs'), useRef('footer')]
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home executeScroll={executeScroll} refList={refList}/>
+      <Cars refProp={refList[0]} />
+      <AboutUs refProp={refList[1]} />
+      <Footer refProp={refList[2]} />
     </div>
   );
 }
