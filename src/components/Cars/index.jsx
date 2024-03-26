@@ -12,21 +12,21 @@ const Cars = (props) => {
         <CarItem
           model="2024 Cadilac Escalade ESV"
           capacity="up to 7 PAX, 5 travelbags"
-          price="110"
+          price="120"
           car={escalade}
           className="car-item"
         />
         <CarItem
           model="Mercedes-Benz Sprinter Luxury Edition Van"
           capacity="up to 14 PAX, 10 travelbags"
-          price="140"
+          price="150"
           car={sprinter}
           className="car-item"
         />
         <CarItem
           model="2023 GMC Yukon Denali Ultimate"
           capacity="up to 7 PAX, 5 travelbags"
-          price="110"
+          price="120"
           car={gmc}
           className="car-item"
         />

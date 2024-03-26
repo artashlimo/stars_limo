@@ -3,6 +3,9 @@ import React from "react";
 import "./carItem.css";
 
 const CarItem = (props) => {
+  const scrollToBottom = () => {
+    window.scroll(0, document.body.offsetHeight);
+  };
   return (
     <div className="car-item">
       <div
@@ -16,6 +19,9 @@ const CarItem = (props) => {
           <p className="price">{props.price}$ hourly</p>
         </div>
       </div>
+      <button onClick={scrollToBottom} className="bookButton">
+        Book Now
+      </button>
     </div>
   );
 };

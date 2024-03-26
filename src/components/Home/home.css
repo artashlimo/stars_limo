@@ -107,33 +107,31 @@
 /* Responsive Styling */
 
 @media only screen and (max-width: 962px) {
-  .text {
-    width: 33vw;
-    font-size: 1.3vw;
+  .home {
+    justify-content: unset;
   }
 
-  .home {
-    height: 90vh;
-    width: 100vw;
-    align-items: center;
-    background-image: url("../../utils/images/home_bg_image.png");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+  .header {
+    width: 86vw;
+    padding: 2vw;
+  }
+
+  .text {
+    width: 88vw;
+    padding: 1vw;
+    font-size: 1.3vw;
+    margin-top: 20px;
   }
 
   .car-container {
-    height: 55vh;
-    width: 90vw;
-    background-size: cover;
-    background-position: center;
+    position: static;
+    display: block;
+    height: auto;
   }
 
   .sprinter {
-    background-image: url("../../utils/cars/LUX_Sprinter.webp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: auto;
+    position: static;
   }
 
   .header .nav {
@@ -141,5 +139,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .home {
+    height: 90vw;
+  }
+
+  .header .nav-button {
+    font-size: 4vw;
+  }
+
+  .sprinter {
+    height: 60vw;
+    position: static;
+  }
+
+  .text {
+    font-size: 1.6vw;
   }
 }

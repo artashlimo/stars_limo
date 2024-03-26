@@ -1,9 +1,8 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect } from "react";
 
 import "./home.css";
 
 const Home = (props) => {
-  useEffect(() => console.log("props: ", props));
   return (
     <div className="home">
       <div className="header">
@@ -29,7 +28,6 @@ const Home = (props) => {
         </div>
       </div>
       <div className="car-container">
-        <div className="sprinter"></div>
         <div className="text">
           <h1>
             Your satisfaction is our top priority, and we strive to ensure that
@@ -38,6 +36,7 @@ const Home = (props) => {
             here for you, day or night.
           </h1>
         </div>
+        <div className="sprinter"></div>
       </div>
     </div>
   );

@@ -19,16 +19,16 @@ const Footer = (props) => {
         </div>
         <div className="footer-socials">
           <div className="social-item">
-            <a href="tel:+310 745 9111" className="social-button">
+            <a href="tel:+1310 745 9111" className="social-button">
               <IoIosPhonePortrait size={50} style={{ color: "#cecece" }} />
             </a>
-            <p className="item-text">+310 745 9111</p>
+            <p className="item-text">+1 310 745 9111</p>
           </div>
           <div className="social-item">
             <a href="mailto: limo@la.com" className="social-button">
               <HiOutlineMail size={40} style={{ color: "#cecece" }} />
             </a>
-            <p className="item-text">limo@la.com</p>
+            <p className="item-text">vipstarstransportation@yahoo.com</p>
           </div>
           <div className="social-item">
             <a
