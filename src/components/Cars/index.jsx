@@ -17,7 +17,7 @@ const Cars = (props) => {
           className="car-item"
         />
         <CarItem
-          model="Mercedes-Benz Sprinter Luxury Edition Van"
+          model="Mercedes-Benz Sprinter Luxury Van"
           capacity="up to 14 PAX, 10 travelbags"
           price="150"
           car={sprinter}

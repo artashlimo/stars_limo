@@ -28,15 +28,15 @@ const Cars = (props) => {
         <div className="award-box">
           <div className="award-item">
             <h2>16</h2>
-            <p>years on market</p>
+            <p>Years On Market</p>
           </div>
           <div className="award-item">
             <h2>30+</h2>
-            <p>available cars</p>
+            <p>Available Cars</p>
           </div>
           <div className="award-item">
             <h2>4.6</h2>
-            <p>customer review</p>
+            <p>Customer Review</p>
           </div>
         </div>
       </div>
